@@ -1,6 +1,7 @@
 body {
   width: 100%;
   background-color: lightgrey;
+  text-align: center;
 }
 .title {
   display: inline-block;
@@ -9,6 +10,7 @@ body {
 .logo {
   width: 500px;
   height: 90px;
+  padding: 1em;
 }
 .pic {
   width: 300px;
@@ -47,15 +49,21 @@ body {
   font-size: 20px;
 }
 .mainMenu {
-  padding: 3em;
-  margin-left: 9em;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
 }
 .Home {
-  margin: 1em;
+  margin-top: 1em;
+  margin-left: 1em;
   font-size: 30px;
   text-decoration: none;
   border-bottom: 1px solid blue;
-  text-align: center;
+  display: inline-block;
+  padding: 0;
 }
 .footer {
   background-color: violet;
@@ -80,4 +88,59 @@ body {
   margin-right: 5em;
   margin-top: 3em;
   color: black;
+}
+
+/*Mobile */
+@media only screen and (max-width: 600px) {
+  .mainMenu {
+    display: inline-flex;
+    padding: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Home {
+    margin: 15px;
+    font-size: 35px;
+  }
+  .logo {
+    width: 320px;
+    height: auto;
+  }
+  .container {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .pic {
+    width: 350px;
+    height: 350px;
+  }
+  .text {
+    font-size: 28px;
+  }
+  .btn {
+    font-size: 30px;
+  }
+  .footer_logo {
+    width: 250px;
+    height: auto;
+    padding: 1em;
+    margin: 1em;
+  }
+  .footer {
+    background-color: violet;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .footer_text {
+    display: none;
+  }
 }
